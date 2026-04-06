@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:ujikom_project/app/modules/auth/bindings/auth_binding.dart';
+import 'package:ujikom_project/app/modules/auth/views/register_view.dart';
 
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
@@ -32,7 +33,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.REGISTER,
-      page: () => AuthView(),
+      page: () => RegisterView(),
       binding: AuthBinding(),
     ),
   ];
