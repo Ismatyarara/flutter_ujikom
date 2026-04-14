@@ -1,4 +1,3 @@
-// filepath: lib/app/middlewares/auth_middleware.dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -14,7 +13,7 @@ class AuthMiddleware extends GetMiddleware {
     final token = box.read('token');
 
     if (token == null || token.toString().isEmpty) {
-      return RouteSettings(name: Routes.LOGIN);
+      return const RouteSettings(name: Routes.LOGIN);
     }
 
     return null;
